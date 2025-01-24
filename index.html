@@ -2,80 +2,65 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sabrycolores</title>
+    <title>SABRY COLORES</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="header-top">
-            <p>¡Todo lo que necesitas para crear arte!</p>
+   <header>
+    <a href="#" class="logo"><i class='bx bxs-palette'></i></i>Sabry Colores</a>
+    <div class="bx bx-menu" id="menu-icon"></div>
+    <ul class="navbar">
+        <li><a href="#home" class="home-active">Home</a></li>
+        <li><a href="#categorias">Categorias</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#about">Sobre Nosotros</a></li>
+        <li><a href="#help">Ayuda</a></li>
+        <li><a href="#cursos">Cursos</a></li>
+    </ul>
+    <div class="perfil">
+        <img src="Diseño sin título (7).png" alt="fdp">
+        <span>User</span>
+        <i class='bx bx-caret-down' ></i>
+    </div>
+   </header> 
+   <section class="home swiper" id="home">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide container">
+        <div class="home-text">
+            <span>Bienvenido a mi tienda!</span>
+            <H1>Encuentra todo para tus proyectos artísticos y más!!</H1>
+            <a href="#" class="btn">Compra Ahora<box-icon name='right-arrow-circle' ></box-icon></a>
         </div>
-        <div class="header-main">
-            <h1>Sabrycolores</h1>
-            <nav>
-                <a href="#products">Products</a>
-                <a href="#about">About Us</a>
-                <a href="#cart">Cart</a>
-            </nav>
+        <img src="Diseño sin título (8).png" alt="">
         </div>
-    </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h2>¡Bienvenido a mi tienda!</h2>
-        <p>Encuentra todo para tus proyectos artísticos: pinceles, pinturas y más!</p>
-        <button>Compra ahora</button>
-    </section>
+        <div class="swiper-slide container">
+            <div class="home-text">
+                <span>Bienvenido a mi tienda!</span>
+                <H1>Encuentra todo para tus proyectos artísticos y más!!</H1>
+                <a href="#" class="btn">Compra Ahora<box-icon name='right-arrow-circle' ></box-icon></a>
+            </div>
+            <img src="Diseño sin título (9).png" alt="">
+            </div>
 
-    <!-- How It Works -->
-    <section id="about" class="about">
-        <h2>How It Works</h2>
-        <div class="steps">
-            <div class="step">
-                <img src="https://via.placeholder.com/100" alt="Step 1">
-                <p>Pick your favorites</p>
+            <div class="swiper-slide container">
+                <div class="home-text">
+                    <span>Bienvenido a mi tienda!</span>
+                    <H1>Encuentra todo para tus proyectos artísticos y más!!</H1>
+                    <a href="#" class="btn">Compra Ahora<box-icon name='right-arrow-circle' ></box-icon></a>
+                </div>
+                <img src="Diseño sin título (10).png" alt="">
             </div>
-            <div class="step">
-                <img src="https://via.placeholder.com/100" alt="Step 2">
-                <p>We deliver to your door</p>
-            </div>
-            <div class="step">
-                <img src="https://via.placeholder.com/100" alt="Step 3">
-                <p>Enjoy the cuteness!</p>
-            </div>
-        </div>
-    </section>
 
-    <!-- Product Catalog -->
-    <section id="products" class="products">
-        <h2>Our Products</h2>
-        <div class="product-list">
-            <div class="product">
-                <img src="https://via.placeholder.com/200" alt="Product 1">
-                <h3>1</h3>
-                <p>$</p>
-                <button>Añadir al carrito</button>
-            </div>
-            <div class="product">
-                <img src="https://via.placeholder.com/200" alt="Product 2">
-                <h3>2</h3>
-                <p>$</p>
-                <button>Añadir al carrito</button>
-            </div>
-            <div class="product">
-                <img src="https://via.placeholder.com/200" alt="Product 3">
-                <h3>3</h3>
-                <p>$</p>
-                <button>Añadir al carrito</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2025 Sabrycolores</p>
-    </footer>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+   </section>
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   <script src="main.js"></script>
 </body>
 </html>

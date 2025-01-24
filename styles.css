@@ -1,123 +1,120 @@
-/* Global Styles */
-body {
-    font-family: 'Arial', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Kurale&family=Permanent+Marker&family=SUSE:wght@100..800&display=swap');
+  *{
+    font-family: "Kurale", serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #fff;
-    color: #444;
-}
-
-.header {
-    background-color: #ffeef2;
-    text-align: center;
-    padding: 20px 0;
-    border-bottom: 3px solid #ff86c1;
-}
-
-.header-top {
-    font-size: 14px;
-    color: #ff86c1;
-}
-
-.header-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.header nav a {
-    margin: 0 15px;
-    color: #d16ba5;
+    list-style: none;
     text-decoration: none;
-    font-weight: bold;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+  }
+:root {
+    --green-color: #B47B84;
+    --light-green-color: #daafb6;
+    --orange-color: #a97bb4;
+    --light-orange-color: #ccafda;
+    --text-color: #272020;
+    --bg-color: #fbf6f6;
 }
-
-.hero {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #fff5f9;
+section{
+    padding: 4.5rem 0 1.5rem;
 }
-
-.hero h2 {
-    font-size: 2em;
-    color: #d16ba5;
+    img{
+        width: 100%;
+    }
+    body{
+        color: var(--text-color);
+    }
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg-color);
+    box-shadow: 0 8px 11px rgb(14 55 54 / 15%);
+    padding: 20px 100px;
+    transition: 0.5s;
 }
-
-.hero button {
-    margin-top: 20px;
-    padding: 15px 30px;
-    background-color: #ff86c1;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
+.perfil{
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
     cursor: pointer;
 }
-
-.about {
-    padding: 50px 20px;
-    background-color: #fff5f9;
-    text-align: center;
+.perfil img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
 }
-
-.about h2 {
-    color: #d16ba5;
-    margin-bottom: 20px;
+.perfil span{
+    font-size: 13px;
+    font-weight: 500;
 }
-
-.steps {
+.logo{
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-color);
+    column-gap: 0.5rem;
 }
-
-.step {
-    background-color: #ffeef2;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    width: 150px;
+.logo .bx{
+    font-size: 24px;
+    color: var(--orange-color);
 }
-
-.products {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.product-list {
+.navbar{
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    column-gap: 0.5rem;
 }
-
-.product {
-    background-color: #ffeef2;
-    border: 1px solid #d16ba5;
-    padding: 20px;
-    border-radius: 10px;
-    width: 200px;
-    text-align: center;
+.navbar a{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
 }
-
-.product img {
-    max-width: 100%;
-    border-radius: 5px;
+.navbar a:hover, 
+.navbar .home-active{
+    background: var(--green-color);
+    border-radius: 5rem;
+    color: var(--bg-color);
+    transition: background 0.5s;
 }
-
-.product button {
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #ff86c1;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
+#menu-icon{
+    font-size: 24px;
     cursor: pointer;
+    z-index: 10001;
 }
+.container{
+    position: relative;
+    width: 100%;
+    min-height: 640px;
+    display: flex;
+    align-items: center;
+    background: url(img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+.container img{
+    width: 400px;
+    position: absolute;
+    bottom: -500px;
+    right: 200px;
 
-.footer {
-    background-color: #d16ba5;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
+}
+.home-text{
+    padding: 0 150px;
+}
+.home-text span{
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--green-color);
 }
